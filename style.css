@@ -49,7 +49,7 @@ picture {
 }
 
 .payments {
-  margin-top: 30px;
+  margin-top: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,9 +60,15 @@ picture {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 13px;
+  gap: 16px;
   padding-inline: 45px;
   row-gap: 28px;
+}
+
+@media (min-width: 1920px) {
+  .steps {
+    gap: 6px;
+  }
 }
 
 @media (min-width: 2000px) {
@@ -78,7 +84,7 @@ picture {
 
 @media (min-width: 650px) {
   .logo {
-    width: 206px;
+    width: 180px;
   }
 
   body {
@@ -89,10 +95,6 @@ picture {
 @media (min-width: 1024px) {
   body {
     background-image: url('assets/background-tablet-landscape.png');
-  }
-
-  .logo {
-    width: 206px;
   }
 }
 
@@ -284,23 +286,22 @@ picture {
   }
 
   .payment {
-    height: 28px;
+    height: 24px;
   }
 
   .payments {
     gap: 32px;
-    padding-inline: 145px;
+    padding-inline: 115px;
   }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
   .steps {
-    gap: 80px;
+    gap: 5px;
   }
 
   .payments {
     gap: 43px;
-    margin-right: 56px;
   }
 
   .payment {
@@ -310,12 +311,12 @@ picture {
 
 @media (min-width: 1920px) {
   .steps {
-    gap: 144px;
-    top: 622px;
+    margin-top: 64px;
   }
 
   .payments {
-    gap: 43px !important;
+    gap: 60px;
+    padding-inline: 115px;
   }
 
   .footer-text {
@@ -358,6 +359,30 @@ picture {
   margin-right: 13px;
 }
 
+.payment-1 {
+  width: 86px;
+}
+
+.payment-2 {
+  width: 102px;
+}
+
+.payment-tablet-1 {
+  width: 86px;
+  display: none;
+}
+
+.payment-tablet-2 {
+  width: 102px;
+  display: none;
+}
+
+.special-payments {
+  display: flex;
+  margin-top: 24px;
+  gap: 60px;
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
   .step {
     -webkit-box-orient: horizontal;
@@ -369,6 +394,28 @@ picture {
 
   .tablet-payment {
     display: none;
+  }
+
+  .payment-1 {
+    width: 86px;
+    display: none;
+  }
+
+  .payment-2 {
+    width: 102px;
+    display: none;
+  }
+
+  .payment-tablet-1 {
+    width: 76px;
+    height: 24px;
+    display: block;
+  }
+
+  .payment-tablet-2 {
+    width: 64px;
+    height: 24px;
+    display: block;
   }
 }
 
@@ -420,6 +467,16 @@ picture {
     width: 157px;
     height: 40px;
   }
+
+  .payment-tablet-1 {
+    width: 107px;
+    height: 40px;
+  }
+
+  .payment-tablet-2 {
+    width: 127px;
+    height: 40px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -430,10 +487,6 @@ picture {
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
-  .payments {
-    margin-top: 65px;
-  }
-
   .footer {
     margin-top: 16px;
   }
@@ -497,12 +550,13 @@ picture {
 @media (min-width: 1024px) and (orientation: landscape) {
   .footer-text {
     max-width: 976px;
+    padding-inline: 0;
   }
 
   .button-cta {
     position: absolute;
     top: 87px;
-    right: px;
+    right: 380px;
     width: 185px;
     height: 44px;
   }
